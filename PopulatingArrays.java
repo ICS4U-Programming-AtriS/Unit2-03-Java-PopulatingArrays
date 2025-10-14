@@ -94,11 +94,9 @@ public final class PopulatingArrays {
    * @param args UNUSED.
    */
   public static void main(final String[] args) {
-    // Create an unpopulated array of size {ARRAY_SIZE}
-    int[] arr = new int[ARRAY_SIZE];
     // Call populateArray() to fill up the array with random integers
     // populateArray() also displays the generated array
-    arr = populateArray(MIN_NUM, MAX_NUM, ARRAY_SIZE);
+    int[] arr = populateArray(MIN_NUM, MAX_NUM, ARRAY_SIZE);
     // call calculateAverage() to sort the array and calculate its average
     // calculateAverage() also displays the sorted array and the average
     calculateAverage(arr);
