@@ -23,6 +23,10 @@ public final class PopulatingArrays {
    * Constant for the maximum random integer.
    */
   public static final int MAX_NUM = 100;
+  /**
+   * Constant for amount of times to loop the program.
+   */
+  public static final int LOOP_COUNT = 5;
 
   /**
    * Private constructor to satisfy style checker.
@@ -94,11 +98,14 @@ public final class PopulatingArrays {
    * @param args UNUSED.
    */
   public static void main(final String[] args) {
-    // Call populateArray() to fill up the array with random integers
-    // populateArray() also displays the generated array
-    int[] arr = populateArray(MIN_NUM, MAX_NUM, ARRAY_SIZE);
-    // call calculateAverage() to sort the array and calculate its average
-    // calculateAverage() also displays the sorted array and the average
-    calculateAverage(arr);
+    // Repeat the program {LOOP_COUNT} times
+    for (int loop = 0; loop < LOOP_COUNT; loop++) {
+      // Call populateArray() to fill up the array with random integers
+      // populateArray() also displays the generated array
+      int[] arr = populateArray(MIN_NUM, MAX_NUM, ARRAY_SIZE);
+      // call calculateAverage() to sort the array and calculate its average
+      // calculateAverage() also displays the sorted array and the average
+      calculateAverage(arr);
+    }
   }
 }
